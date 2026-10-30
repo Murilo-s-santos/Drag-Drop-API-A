@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban - Estudos Enem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kanban">
+        <!-- Coluna A Fazer -->
+        <div class="coluna" id="todo">
+            <h3>📝 A Fazer</h3>
+            <div class="tarefa" draggable="true" id="task1">Redação do Enem</div>
+        </div>
+
+        <!-- Coluna Em Andamento -->
+        <div class="coluna" id="doing">
+            <h3>🚀 Em Andamento</h3>
+            <div class="tarefa" draggable="true" id="task2">Estudar Física (Óptica)</div>
+        </div>
+
+        <!-- Coluna Concluído -->
+        <div class="coluna" id="done">
+            <h3>✅ Concluído</h3>
+            <div class="tarefa" draggable="true" id="task3">Trabalho de História</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

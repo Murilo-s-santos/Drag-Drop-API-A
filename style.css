@@ -1,0 +1,52 @@
+body { 
+    font-family: sans-serif; 
+    background: #f0f2f5; 
+    padding: 20px; 
+}
+
+.kanban { 
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.coluna { 
+    background: #ebecf0; 
+    border-radius: 10px; 
+    width: 250px; 
+    padding: 15px; 
+    min-height: 350px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+}
+
+.coluna h3 { 
+    font-size: 16px; 
+    color: #172b4d; 
+    margin-top: 0; 
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 8px; 
+}
+
+.tarefa { 
+    background: #ffffff; 
+    padding: 12px; 
+    margin-bottom: 10px; 
+    border-radius: 6px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12); 
+    cursor: grab; 
+    font-size: 14px; 
+    font-weight: 500; 
+    transition: background 0.3s; 
+}
+
+/* Aplica o estilo riscado e verde apenas nos itens dentro da coluna Concluído */
+.coluna#done .tarefa { 
+    background: #e6fffa; 
+    color: #047857; 
+    text-decoration: line-through; 
+}
+
+/* Classe extra para quando o item estiver sendo arrastado */
+.tarefa.dragging {
+    opacity: 0.5;
+}
